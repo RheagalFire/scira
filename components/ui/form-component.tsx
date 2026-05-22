@@ -340,16 +340,7 @@ const ProviderIcon = ({
     case 'nvidia':
       return <NVIDIA {...iconProps} />;
     case 'litellm':
-      return (
-        <svg {...iconProps} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M3 15h13l5-5" fill="none" />
-          <path d="M3 15l3-8h8l5 3" fill="none" />
-          <circle cx="7" cy="17" r="2" fill="currentColor" stroke="none" />
-          <circle cx="15" cy="17" r="2" fill="currentColor" stroke="none" />
-          <line x1="9" y1="17" x2="13" y2="17" />
-          <line x1="3" y1="15" x2="3" y2="17" />
-        </svg>
-      );
+      return <span className={cn('shrink-0 leading-none', className)} style={{ fontSize: size }}>🚅</span>;
     default:
       return (
         <svg {...iconProps} viewBox="0 0 24 24" fill="currentColor">
