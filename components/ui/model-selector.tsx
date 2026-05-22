@@ -242,8 +242,13 @@ const ProviderIcon = ({
       return <NVIDIA {...iconProps} />;
     case 'litellm':
       return (
-        <svg {...iconProps} viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L19.36 7.5 12 10.82 4.64 7.5 12 4.18zM4 8.72l7 3.5v7.56l-7-3.5V8.72zm16 0v7.56l-7 3.5v-7.56l7-3.5z" />
+        <svg {...iconProps} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 15h13l5-5" fill="none" />
+          <path d="M3 15l3-8h8l5 3" fill="none" />
+          <circle cx="7" cy="17" r="2" fill="currentColor" stroke="none" />
+          <circle cx="15" cy="17" r="2" fill="currentColor" stroke="none" />
+          <line x1="9" y1="17" x2="13" y2="17" />
+          <line x1="3" y1="15" x2="3" y2="17" />
         </svg>
       );
     default:
